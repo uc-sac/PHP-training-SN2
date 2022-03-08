@@ -1,9 +1,9 @@
 <?php  
-function inc(&$i)  
+function valueCall($x)  
 {  
-$i++;  
+$x .= 'Call By Value';  
 }  
-$i = 1;  
-inc($i);  
-echo $i;  
+$y = 'Hello PHP';  
+valueCall($y);  
+echo $y;  
 ?> 
